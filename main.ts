@@ -27,7 +27,6 @@ input.onButtonPressed(Button.A, function () {
     neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
     neopixelStrip.show()
     inputLightLevel = input.lightLevel()
-    basic.pause(1000)
 
     //  no neopixel 
     if (inputLightLevel <= 51) {
@@ -65,7 +64,6 @@ input.onButtonPressed(Button.A, function () {
         neopixelStrip.show()
     }
 
-
     // fourth neopixel 
     if (inputLightLevel > 208) {
         neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
@@ -74,6 +72,8 @@ input.onButtonPressed(Button.A, function () {
         neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Purple))
         neopixelStrip.show()
     }
+
+    // final setup
     neopixelStrip.show()
     basic.pause(3000)
     neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
@@ -82,10 +82,3 @@ input.onButtonPressed(Button.A, function () {
     neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
     neopixelStrip.show()
 })
-
-
-
-
-
-    
-
